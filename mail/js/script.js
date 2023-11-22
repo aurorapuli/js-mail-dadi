@@ -47,27 +47,30 @@ sendButton.addEventListener("click",
 
 */
 
+        let risultato ;
 
 
-        for ( let i = 0; i <= partecipanti.length; i++ ){
+        for ( let i = 0; i <= partecipanti.length - 1; i++ ){
+            
+
 
             let singoloPartecipante = partecipanti [i];
-            console.log(singoloPartecipante);
+            // console.log(singoloPartecipante);
            
 
              if(singoloPartecipante == inputEmail.value){
-                benvenuto.innerHTML = "Benvenuto nel gruppo";
-               console.log(inputEmail.value);
-
-             } else {
-
-                benvenuto.innerHTML = "Non fai parte del gruppo";
-                console.log(inputEmail.value);
-                
+                risultato = true
+                console.log("trovata");
+                benvenuto.innerHTML = "Benvenuto nel nostro gruppo";
              }
-
             
         }
-  }
+
+        if (!risultato){
+            benvenuto.innerHTML = "Non puoi entrare nel nostro gruppo"
+            console.log("non trovata");
+        }
+
+    }
 
 );
