@@ -15,25 +15,36 @@ sendButton.addEventListener("click",
 
   function (){
 
-    if(inputEmail.value == partecipanti [0]){
-
+     if(inputEmail.value == partecipanti [0]){
          benvenuto.innerHTML = "Benvenuto nel gruppo"
-
          console.log(inputEmail.value);
+          console.log(partecipanti);
+  
+    } else if (inputEmail.value == partecipanti [1]){
+        benvenuto.innerHTML = "Benvenuto nel gruppo"
+           console.log(inputEmail.value);
          console.log(partecipanti);
-        
 
-    } else{
+
+     } else if(inputEmail.value == partecipanti [2]){
+        benvenuto.innerHTML = "Benvenuto nel gruppo"
+           console.log(inputEmail.value);
+         console.log(partecipanti);
+    
+         
+
+     } else if(inputEmail.value == partecipanti [3]){
+        benvenuto.innerHTML = "Benvenuto nel gruppo"
+           console.log(inputEmail.value);
+         console.log(partecipanti);
+    
+         
+
+     } else {
+
         benvenuto.innerHTML = "Non fai parte del gruppo"
-
-        console.log(inputEmail.value);
-        console.log(partecipanti);
-    }
-
+     }
 
   }
-
-
-
 
 );
