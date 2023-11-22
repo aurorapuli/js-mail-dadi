@@ -15,7 +15,7 @@ sendButton.addEventListener("click",
 
   function (){
 
-     if(inputEmail.value == partecipanti [0]){
+   /*  if(inputEmail.value == partecipanti [0]){
          benvenuto.innerHTML = "Benvenuto nel gruppo"
          console.log(inputEmail.value);
           console.log(partecipanti);
@@ -45,6 +45,29 @@ sendButton.addEventListener("click",
         benvenuto.innerHTML = "Non fai parte del gruppo"
      }
 
+*/
+
+
+
+        for ( let i = 0; i <= partecipanti.length; i++ ){
+
+            let singoloPartecipante = partecipanti [i];
+            console.log(singoloPartecipante);
+           
+
+             if(singoloPartecipante == inputEmail.value){
+                benvenuto.innerHTML = "Benvenuto nel gruppo";
+               console.log(inputEmail.value);
+
+             } else {
+
+                benvenuto.innerHTML = "Non fai parte del gruppo";
+                console.log(inputEmail.value);
+                
+             }
+
+            
+        }
   }
 
 );
